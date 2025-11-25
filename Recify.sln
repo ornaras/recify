@@ -16,7 +16,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GitHub", "GitHub", "{36D591
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Workflows", "Workflows", "{22644E7B-8706-41A9-9533-0ABB6691631B}"
 	ProjectSection(SolutionItems) = preProject
+		.github\workflows\push-main.yml = .github\workflows\push-main.yml
 		.github\workflows\sonarqube.yml = .github\workflows\sonarqube.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReleasePlease", "ReleasePlease", "{2D723AC1-4840-46AB-81AD-E9732CDEE0EC}"
+	ProjectSection(SolutionItems) = preProject
+		.github\release-please\config.json = .github\release-please\config.json
+		.github\release-please\manifest.json = .github\release-please\manifest.json
 	EndProjectSection
 EndProject
 Global
@@ -39,6 +46,7 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{22644E7B-8706-41A9-9533-0ABB6691631B} = {36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}
+		{2D723AC1-4840-46AB-81AD-E9732CDEE0EC} = {36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {55493DA5-657A-4151-A002-E0F294D1417D}
