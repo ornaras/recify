@@ -23,3 +23,9 @@ jobs:
           token: ${{ secrets.GH_TOKEN }}
           config-file: .github\please-release\config.json
           manifest-file: .github\please-release\manifest.json
+  to-release:
+    if: ${{ needs.release-please.outputs.isRelease == 'true' }}
+    uses: ./.github/workflows/release.yml@main
+    with:
+      version: ${{ needs.release-please.outputs.version }}
+      tag: ${{ needs.release-please.outputs.tag }}

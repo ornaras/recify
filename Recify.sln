@@ -18,6 +18,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Workflows", "Workflows", "{22644E7B-8706-41A9-9533-0ABB6691631B}"
 	ProjectSection(SolutionItems) = preProject
 		.github\workflows\push-main.yml = .github\workflows\push-main.yml
+		.github\workflows\release.yml = .github\workflows\release.yml
 		.github\workflows\sonarqube.yml = .github\workflows\sonarqube.yml
 	EndProjectSection
 EndProject
