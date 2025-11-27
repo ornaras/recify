@@ -1,20 +1,26 @@
 #pragma warning disable S101
 namespace Recify.Parsers.Taxcom.Models;
 
+/// <summary>Информация о ККТ</summary>
 public struct TaxcomKKT
 {
-	[JsonPropertyName("name")]
+    /// <summary>Название ККТ</summary>
+    [JsonPropertyName("name")]
 	public string Name {get; set;}
-	
-	[JsonPropertyName("kktRegNumber")]
+
+    /// <summary>Регистрационный номер ККТ</summary>
+    [JsonPropertyName("kktRegNumber")]
 	public string RegNumber {get; set;}
-	
-	[JsonPropertyName("kktFactoryNumber")]
+
+    /// <summary>Заводской номер ККТ</summary>
+    [JsonPropertyName("kktFactoryNumber")]
 	public string Serial {get; set;}
-	
-	[JsonPropertyName("fnFactoryNumber")]
+
+    /// <summary>Номер актуального фискального накопителя</summary>
+    [JsonPropertyName("fnFactoryNumber")]
 	public string StorageSerial {get; set;}
-	
-	[JsonPropertyName("cashdeskState")]
+
+    /// <summary>Состояние ККТ</summary>
+    [JsonPropertyName("cashdeskState")]
 	public TaxcomKKTState State {get; set;}
 }

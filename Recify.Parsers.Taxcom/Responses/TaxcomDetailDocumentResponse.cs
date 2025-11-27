@@ -2,24 +2,31 @@ using System.Text.Json.Nodes;
 
 namespace Recify.Parsers.Taxcom.Responses;
 
+/// <summary>Подробная информация о документе</summary>
 public struct TaxcomDetailDocumentResponse
 {
+    /// <summary>Дата формирования ответа</summary>
 	[JsonPropertyName("reportDate")]
 	public DateTime Date { get; set; }
-	
-	[JsonPropertyName("documentFormatDate")]
+
+    /// <summary>Дата формата фискального документа</summary>
+    [JsonPropertyName("documentFormatDate")]
 	public string FormatDate { get; set; }
-	
-	[JsonPropertyName("documentFormatVersion")]
+
+    /// <summary>Формат фискального документа</summary>
+    [JsonPropertyName("documentFormatVersion")]
 	public string Format { get; set; }
-	
-	[JsonPropertyName("documentType")]
+
+    /// <summary>Тип документа</summary>
+    [JsonPropertyName("documentType")]
 	public TaxcomDocType DocumentType { get; set; }
-	
-	[JsonPropertyName("document")]
+
+    /// <summary>Информация о документе</summary>
+    [JsonPropertyName("document")]
 	public JsonNode Document { get; set; }
-	
-	[JsonIgnore]
+
+    /// <summary>Фискальный признак документа</summary>
+    [JsonIgnore]
 	public readonly uint Sign 
 	{
 		get

@@ -1,13 +1,17 @@
 namespace Recify.Parsers.Taxcom.Models;
 
+/// <summary>Информация о кол-ве записей</summary>
 public struct TaxcomCounts
 {
-	[JsonPropertyName("recordCount")]
+    /// <summary>Общее кол-во записей</summary>
+    [JsonPropertyName("recordCount")]
 	public int TotalCount {get; set;}
-	
-	[JsonPropertyName("recordFilteredCount")]
+
+    /// <summary>Кол-во записей с учетом фильтра</summary>
+    [JsonPropertyName("recordFilteredCount")]
 	public int FilteredCount {get; set;}
-	
-	[JsonPropertyName("recordInResponceCount")]
+
+    /// <summary>Кол-во записей в ответе</summary>
+    [JsonPropertyName("recordInResponceCount")]
 	public int Count {get; set;}
 }

@@ -1,13 +1,17 @@
 namespace Recify.Parsers.Taxcom.Models;
 
+/// <summary>Информация о подразделении</summary>
 public struct TaxcomDepartament
 {
-	[JsonPropertyName("id")]
+    /// <summary>Идентификатор подразделения</summary>
+    [JsonPropertyName("id")]
 	public string Id {get; set;}
-	
-	[JsonPropertyName("name")]
+
+    /// <summary>Название подразделения</summary>
+    [JsonPropertyName("name")]
 	public string Name {get; set;}
-	
-	[JsonPropertyName("code")]
+
+    /// <summary>Код подразделения</summary>
+    [JsonPropertyName("code")]
 	public string Code {get; set;}
 }

@@ -1,19 +1,25 @@
 namespace Recify.Parsers.Taxcom.Models;
 
+/// <summary>Информация о смене</summary>
 public struct TaxcomSession
 {
-	[JsonPropertyName("fnFactoryNumber")]
+    /// <summary>Номер фискального накопителя</summary>
+    [JsonPropertyName("fnFactoryNumber")]
 	public string StorageNumber {get; set;}
-	
-	[JsonPropertyName("shiftNumber")]
+
+    /// <summary>Номер смены</summary>
+    [JsonPropertyName("shiftNumber")]
 	public int Number {get; set;}
-	
-	[JsonPropertyName("openDateTime")]
+
+    /// <summary>Дата открытия</summary>
+    [JsonPropertyName("openDateTime")]
 	public DateTime Opened {get; set;}
-	
-	[JsonPropertyName("closeDateTime")]
+
+    /// <summary>Дата закрытия</summary>
+    [JsonPropertyName("closeDateTime")]
 	public DateTime Closed {get; set;}
-	
-	[JsonPropertyName("receiptCount")]
+
+    /// <summary>Кол-во чеков за смену</summary>
+    [JsonPropertyName("receiptCount")]
 	public int ReceiptCount {get; set;}
 }

@@ -1,19 +1,25 @@
 namespace Recify.Parsers.Taxcom.Responses;
 
+/// <summary>Сообщение об ошибке</summary>
 public class TaxcomResponseException: Exception
 {
-	[JsonPropertyName("httpErrorCode")]
+    /// <summary>Код HTTP</summary>
+    [JsonPropertyName("httpErrorCode")]
 	public short HTTPCode {get; set;}
-	
-	[JsonPropertyName("apiErrorCode")]
+
+    /// <summary>Код API</summary>
+    [JsonPropertyName("apiErrorCode")]
 	public short APICode {get; set;}
 
-	[JsonPropertyName("commonDescription")]
+    /// <summary>Общее описание</summary>
+    [JsonPropertyName("commonDescription")]
 	public string CommonDescription { get; set; } = "";
 
-	[JsonPropertyName("details")]
+    /// <summary>Детальная информация</summary>
+    [JsonPropertyName("details")]
 	public string Details { get; set; } = "";
-	
-	public override string ToString() => 
+
+    /// <summary>Формирует текстовое представление исключения в компактном виде</summary>
+    public override string ToString() => 
 		$"[{HTTPCode}/{APICode}] {CommonDescription}: {Details}";
 }
