@@ -28,6 +28,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReleasePlease", "ReleasePle
 		.github\release-please\manifest.json = .github\release-please\manifest.json
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recify.Parsers.OfdRu", "Recify.Parsers.OfdRu\Recify.Parsers.OfdRu.csproj", "{BF0E7442-662B-4DE2-9193-1FDA25AF7E61}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,10 @@ Global
 		{EC3E6423-24C1-4E02-ACD3-E4C9FFF98044}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EC3E6423-24C1-4E02-ACD3-E4C9FFF98044}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC3E6423-24C1-4E02-ACD3-E4C9FFF98044}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF0E7442-662B-4DE2-9193-1FDA25AF7E61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF0E7442-662B-4DE2-9193-1FDA25AF7E61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF0E7442-662B-4DE2-9193-1FDA25AF7E61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF0E7442-662B-4DE2-9193-1FDA25AF7E61}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
