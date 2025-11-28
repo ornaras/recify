@@ -28,12 +28,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReleasePlease", "ReleasePle
 		.github\release-please\manifest.json = .github\release-please\manifest.json
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recify.Parsers.Taxcom", "Recify.Parsers.Taxcom\Recify.Parsers.Taxcom.csproj", "{42372D02-30BD-4083-8563-5AF75AEFAD36}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{42372D02-30BD-4083-8563-5AF75AEFAD36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42372D02-30BD-4083-8563-5AF75AEFAD36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42372D02-30BD-4083-8563-5AF75AEFAD36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42372D02-30BD-4083-8563-5AF75AEFAD36}.Release|Any CPU.Build.0 = Release|Any CPU
 		{90D98FE5-CA67-4C7E-88AA-B2E5BB5F27AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{90D98FE5-CA67-4C7E-88AA-B2E5BB5F27AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90D98FE5-CA67-4C7E-88AA-B2E5BB5F27AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
